@@ -3,6 +3,9 @@ import collections
 import os
 
 
+NUM_OF_WORDS = 10
+
+
 def get_cmdline_args():
     parser = argparse.ArgumentParser(
         description='script for frequency analysis of words in any text')
@@ -23,7 +26,7 @@ def get_most_frequent_words(input_text):
     for word in input_text:
         if word > '@':
             counted_words[word] += 1
-    return counted_words.most_common(10)
+    return counted_words.most_common(NUM_OF_WORDS)
 
 
 if __name__ == '__main__':
