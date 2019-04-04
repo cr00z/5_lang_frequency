@@ -10,17 +10,16 @@ Example of script launch on Linux, Python 3.5:
 
 ```bash
 
-$ python lang_frequency.py test.txt
-frequency: 44, word: the
-frequency: 38, word: to
-frequency: 20, word: and
-frequency: 16, word: for
-frequency: 15, word: you
-frequency: 13, word: is
-frequency: 12, word: a
-frequency: 12, word: of
-frequency: 12, word: be
-frequency: 12, word: with
+$ python lang_frequency.py bars.json
+нет type PublicPhone b geometry coordinates Point properties DatasetId VersionNumber
+
+$ python lang_frequency.py bars.json -t 5 -v
+FREQUENCY    WORD
+1081         нет
+1067         type
+1066         PublicPhone
+563          b
+533          geometry
 
 ```
 
